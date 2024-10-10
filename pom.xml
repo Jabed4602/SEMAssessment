@@ -26,6 +26,13 @@
                     <configuration>
                         <archive>
                             <manifest>
+                                <dependencies>
+                                    <dependency>
+                                        <groupId>mysql</groupId>
+                                        <artifactId>mysql-connector-java</artifactId>
+                                        <version>8.0.28</version>
+                                    </dependency>
+                                </dependencies>
                                 <mainClass>com.napier.sem.App</mainClass>
                             </manifest>
                         </archive>
@@ -42,13 +49,6 @@
                             </goals>
                         </execution>
                     </executions>
-                    <dependencies>
-                        <dependency>
-                            <groupId>mysql</groupId>
-                            <artifactId>mysql-connector-java</artifactId>
-                            <version>8.0.28</version>
-                        </dependency>
-                    </dependencies>
                 </plugin>
             </plugins>
         </build>
